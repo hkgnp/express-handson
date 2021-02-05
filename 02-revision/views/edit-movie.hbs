@@ -1,17 +1,22 @@
 {{#extends 'base'}}
 
-{{#block 'head'}}Edit Movie: {{movie.title}}{{/block}}
+{{#block 'head'}}Edit Movie: {{ movie.title }}{{/block}}
 {{#block 'content'}}
 <form method="POST">
-    <div>
-        <label class="form-label">Title</label>
-        <input type="text" name="title" value="{{movie.title}}"/>
-    </div>
-        <div>
-        <label class="form-label">Plot</label>
-        <input type="text" name="plot" value="{{movie.plot}}"/>
-    </div>
-    <input type="submit">
+  <div>
+    <label class="form-label">Title: </label>
+    <input type="text" name="title" value="{{ movie.title }}" />
+  </div>
+  <div>
+    <label class="form-label">Plot:</label>
+    <textarea
+      class="form-control"
+      name="plot"
+      rows="3"
+      value="{{ movie.plot }}"
+    ></textarea>
+  </div>
+  <input type="submit" class="btn btn-primary mt-3" />
 </form>
 {{/block}}
 {{/extends}}
