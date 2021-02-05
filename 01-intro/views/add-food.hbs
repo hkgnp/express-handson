@@ -1,0 +1,24 @@
+{{#extends 'base'}}
+
+{{#block "content"}}
+<h1>Submit Food</h1>
+<form method = "POST" class="form-group">
+    <div>
+        <label class="form-label">Food Name:</label>
+        <input class="form-control" type="text" id="food-name" name="food-name">
+    </div>
+    <div>
+        <label class="form-label">Calories:</label>
+        <input class="form-control" type="text" id="calories" name="calories">
+    </div>
+    <div>
+        <input class="form-check form-check-inline" type="checkbox" id="tags" name="tags" value="Organic">
+        <label class="form-check-label">Organic</label>
+
+    </div>
+    <div><input class="btn btn-primary" type="submit"></div>
+</form>
+
+{{/block}}
+
+{{/extends}}

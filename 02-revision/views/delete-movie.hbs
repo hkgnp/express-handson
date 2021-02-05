@@ -1,0 +1,17 @@
+{{#extends 'base'}} {{#block 'head'}}Delete {{ movieToDelete.title }}{{/block}}
+
+{{#block 'content'}}
+
+<form method="POST">
+  <div class="alert alert-danger">
+    <h1 class="text-danger">
+      Are you sure you want to delete {{ movieToDelete.title }}?
+    </h1>
+
+    <input type="submit" class="btn btn-danger" value="Yes" />
+    <a href class="btn btn-info">No</a>
+  </div>
+</form>
+{{/block}}
+
+{{/extends}}

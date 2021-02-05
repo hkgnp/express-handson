@@ -1,0 +1,17 @@
+{{#extends 'base'}}
+
+{{#block 'head'}}Add Movies{{/block}}
+{{#block 'content'}}
+<form method="POST">
+    <div>
+        <label class="form-label">Title</label>
+        <input type="text" name="title" placeholder="Please enter the movie title"/>
+    </div>
+        <div>
+        <label class="form-label">Plot</label>
+        <input type="text" name="plot" placeholder="Please enter the movie plot"/>
+    </div>
+    <input type="submit">
+</form>
+{{/block}}
+{{/extends}}

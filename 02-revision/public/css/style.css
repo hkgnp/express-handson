@@ -1,0 +1,12 @@
+#movies-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border-top-left-radius: 18px !important;
+  border-top-right-radius: 18px !important;
+  border-style: dashed !important;
+  border-width: 3px !important;
+}

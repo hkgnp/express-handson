@@ -1,0 +1,17 @@
+{{#extends 'base'}}
+
+{{#block 'head'}}Edit Movie: {{movie.title}}{{/block}}
+{{#block 'content'}}
+<form method="POST">
+    <div>
+        <label class="form-label">Title</label>
+        <input type="text" name="title" value="{{movie.title}}"/>
+    </div>
+        <div>
+        <label class="form-label">Plot</label>
+        <input type="text" name="plot" value="{{movie.plot}}"/>
+    </div>
+    <input type="submit">
+</form>
+{{/block}}
+{{/extends}}
