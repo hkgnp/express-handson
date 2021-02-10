@@ -5,7 +5,10 @@ const axios = require('axios');
 
 const app = express();
 
+// Set up HBS as view engine
 app.set('view engine', 'hbs');
+
+// Set up static folder for styles, images, etc.
 app.use(express.static('public'));
 
 // Wax on
